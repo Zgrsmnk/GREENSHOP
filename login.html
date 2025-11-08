@@ -3,47 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Login</title>
-    <style>
-        a,
-        span{
-            text-decoration: none;
-        }
-        span{
-            color: green;
-        }
-        .button{
-            background-color: green;
-            color: white;
-        }
-    </style>
 </head>
 <body>
-    <form action="/submit" method="post">
-        <span>Login</span>
-        <a href="register.html">Register</a>
-        <p>Enter your email and password to login.</p>
-        <div>
-            <input type="email" name="email" placeholder="Enter your email address" required>
+    <form action="/submit" method="post" class="form">
+        <div class="management_log">
+           <span class="login_log">Login</span>
+           <a href="register.html" class="register_log">Register</a>
         </div>
-        <div>
+        <p class="description_log">Enter your email and password to login.</p>
+        <div class="input_log">
+            <input type="email" name="email" placeholder="Enter your email address" required>
             <input type="password" name="password" placeholder="Password" required>
         </div>
-        <button class="button" type="submit">
+        <button class="button_log" type="submit">
             Login
         </button>
-        <p>
+        <p class="decription_text_log">
             Or login with
         </p>
-        <div>
-            <button>
+        <div class="buttons_log">
+            <button class="button_box_gg_log">
                 <img src="images/icon_gg.svg" alt="icon_google">
                 Continue with Google
             </button>
-        </div>
-        <div>
-            <button>
-                <img src="images/icon_fb.svg" alt="icon_facebook">
+            <button class="button_box_fb_log">
+                <img src="images/icon_fb.svg" alt="icon_facebook"> 
                 Continue with Facebook
             </button>
         </div>
