@@ -6,52 +6,33 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Register</title>
-    <style>
-        a, 
-        span{
-            text-decoration: none;
-        }
-        span{
-            color:green
-        }
-        .button{
-            background-color: green;
-            color: white;
-        }
-    </style>
 </head>
 <body>
-    <form action="/submit" method="post">
-        <a href="login.html">Login</a>
-        <span>Register</span>
-        <p>Enter your email and password to register.</p>
-        <div>
-            <input type="text" name="username" placeholder="Usename" required>
+    <form action="/submit" method="post"  class="form">
+        <div class="management">
+            <a href="login.html" class="login_reg">Login</a>
+            <span class="register_reg">Register</span>
         </div>
-        <div>
+        <p class="description">Enter your email and password to register.</p>
+        <div class="input">
+            <input type="text" name="username" placeholder="Username" required>
             <input type="email" name="email" placeholder="Enter your email address" required>
-        </div>
-        <div>
             <input type="password" name="password" placeholder="Password" required>
-        </div>
-        <div>
             <input type="password" name="password" placeholder="Confirm Password" required>
         </div>
         <button class="button" type="submit">
             Register
         </button>
-        <p>
+        <p class="decription_text">
             Or register with
         </p>
-        <div>
-            <button>
-                <img src="img/icon_gg.svg" alt="icon_google">
+        <div class="buttons">
+            <button class="button_box_gg">
+                <img src="images/icon_gg.svg" alt="icon_google">
                 Continue with Google
             </button>
-        </div>
-        <div>
-            <button>
-                <img src="img/icon_fb.svg" alt="icon_facebook">
+            <button class="button_box_fb">
+                <img src="images/icon_fb.svg" alt="icon_facebook">
                 Continue with Facebook
             </button>
         </div>

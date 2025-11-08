@@ -1,0 +1,178 @@
+/* styles for register */
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+}
+.management{
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    margin: 0;
+}
+.login_reg{
+    font-size: 20px;
+    line-height: 16px;
+    text-decoration: none;
+}
+.register_reg{
+    font-size: 20px;
+    line-height: 16px;
+    text-decoration: none;
+    color: green;
+}
+.description{
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 40px;
+}
+input[type="text"]{
+    padding: 12px 14px;
+    border: 1px solid #EAEAEA;
+    font-size: 14px;
+    line-height: 16px;
+}
+input[type="email"]{
+    padding: 12px 14px;
+    border: 1px solid #EAEAEA;
+    font-size: 14px;
+    line-height: 16px;
+}
+input[type="password"]{
+    padding: 12px 14px;
+    border: 1px solid #EAEAEA;
+    font-size: 14px;
+    line-height: 16px;
+}
+input[type="password"]{
+    padding: 12px 14px;
+    border: 1px solid #EAEAEA;
+    font-size: 14px;
+    line-height: 16px;
+}
+.button{
+    background-color: green;
+    color: white;
+    width: 300px;
+    margin-top: 41px;
+    padding: 16px 118px 13px 119px;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid green;
+}
+.decription_text{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 36px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 27px;
+}
+.button_box_gg{
+    font-size: 13px;
+    line-height: 16px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    padding: 10px 69px;
+}
+.button_box_fb{
+    font-size: 13px;
+    line-height: 16px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    padding: 11px 63px 9px 64px;
+}
+
+/* styles for login */
+
+.login_log{
+    font-size: 20px;
+    line-height: 16px;
+    text-decoration: none;
+    color: green;
+}
+
+.register_log{
+    font-size: 20px;
+    line-height: 16px;
+    text-decoration: none;
+}
+.input_log{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+}
+.management_log{
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    margin: 0;
+}
+.description_log{
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 40px;
+}
+input[type="email"] {
+    padding: 12px 14px;
+    border: 1px solid #EAEAEA;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+input[type="password"] {
+    padding: 12px 14px;
+    border: 1px solid #EAEAEA;
+    font-size: 14px;
+    line-height: 16px;
+}
+.button_log{
+    background-color: green;
+    color: white;
+    width: 300px;
+    margin-top: 41px;
+    padding: 16px 118px 13px 119px;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid green;
+}
+.decription_text_log{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 36px;
+}
+.buttons_log{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 27px;
+}
+.button_box_gg_log{
+    font-size: 13px;
+    line-height: 16px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    padding: 10px 69px;
+}
+
+.button_box_fb_log{
+    font-size: 13px;
+    line-height: 16px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    padding: 11px 63px 9px 64px;
+}
