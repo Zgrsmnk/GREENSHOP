@@ -198,8 +198,8 @@ body{
     margin: 0 20px;
 }
 .logo_box{
-    margin-right: 140px;
-    width: 300px;
+    margin-right: 150px;
+    width: 150px;
 }
 .logo{
     font-size: 25px;
@@ -208,13 +208,14 @@ body{
     color: #46A358;
 }
 .btn_box{
-    margin-left: 300px;
+    margin-left: 350px;
     padding-top: 8px;
     text-align: center;
 }
 .menu_box{
     width: 351px;
     padding-top: 15px;
+    margin-left: 100px;
 }
 .nav_list{
     padding: 0;
@@ -231,7 +232,7 @@ hr{
     display: inline-block;
     vertical-align: middle;
 }
-.plants_img{
+.main_img{
     margin-left: 160px;
 }
 .link{
@@ -240,11 +241,13 @@ hr{
     text-decoration: none;
     color: #46A358;
 }
+.link:hover{
+    background: #28a745;
+    color: #FFFFFF;
+}
 .active{
-    font-size: 16px;
-    line-height: 20px;
-    text-decoration: none;
     color: #3D3D3D;
+    font-weight: bold;
 }
 .btn{
     font-size: 16px;
@@ -259,8 +262,6 @@ hr{
 .title{
     font-size: 14px;
     line-height: 16px;
-    margin-top: 68px;
-    margin-bottom: 7px;
 }
 .title_main{
     font-size: 70px;
@@ -283,6 +284,11 @@ hr{
     padding: 10px 27px;
     border: 2px solid #46A358;
     border-radius: 10px;
+    text-decoration: none;
+}
+.btn_main:hover,
+.btn:hover{
+    background: #218838;
 }
 .main_text{
     margin-bottom: 100px;
