@@ -1,5 +1,5 @@
 /* styles for register */
-body{
+.login, .register{
     display: flex;
     justify-content: center;
     background-color: #FFFFFF;
