@@ -1,5 +1,5 @@
 /* styles for register */
-body{
+.login, .register{
     display: flex;
     justify-content: center;
     background-color: #FFFFFF;
@@ -176,3 +176,129 @@ input[type="password"] {
     border: 1px solid #EAEAEA;
     padding: 11px 63px 9px 64px;
 }
+/* styles for index.html */
+body{
+    background:#FFFFFF;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header_box{
+    margin-top: 30px;
+} 
+.logo_box,
+.menu_box,
+.btn_box {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header_box li{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+.logo_box{
+    margin-right: 150px;
+    width: 150px;
+}
+.logo{
+    font-size: 25px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #46A358;
+}
+.btn_box{
+    margin-left: 350px;
+    padding-top: 8px;
+    text-align: center;
+}
+.menu_box{
+    width: 351px;
+    padding-top: 15px;
+    margin-left: 100px;
+}
+.nav_list{
+    padding: 0;
+    margin: 0;
+}
+hr{
+    color: #46A358;
+}
+.offer{
+    background-color: #F5F5F5;
+}
+.main_text,
+.main_img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.main_img{
+    margin-left: 160px;
+}
+.link{
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #46A358;
+}
+.link:hover{
+    background: #28a745;
+    color: #FFFFFF;
+}
+.active{
+    color: #3D3D3D;
+    font-weight: bold;
+}
+.btn{
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    background-color:#46A358;
+    color: #FFFFFF;
+    padding: 8px 17px;
+    border: 2px solid #46A358;
+    border-radius: 10px;
+}
+.title{
+    font-size: 14px;
+    line-height: 16px;
+}
+.title_main{
+    font-size: 70px;
+    line-height: 140px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.text{
+    font-size: 14px;
+    line-height: 24px;
+    margin-top:0;
+    margin-bottom: 44px;
+}
+.btn_main{
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    padding: 10px 27px;
+    border: 2px solid #46A358;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.btn_main:hover,
+.btn:hover{
+    background: #218838;
+}
+.main_text{
+    margin-bottom: 100px;
+    margin-left: 40px;
+}
+span{
+    color: #46A358;
+}
+
+
+
+

@@ -4,32 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="logo">
-        <a href="index.html">
-            <img src="images/icon.svg" alt="logo">
-            GREENSHOP
-        </a>
-    </div>
-    <div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Shop</a>
-                </li>
-                <li>
-                    <a href="#">Plant Care</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="btn_box">
-        <a href="login.html">Login</a>
-    </div>
+    <header class="header_box">
+        <div class="container">
+        <div class="logo_box">
+            <a href="index.html" class="logo">
+                <img src="images/logo_icon.svg" alt="logo">
+            </a>
+        </div>
+        <div class="menu_box">
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="list">
+                        <a class="active" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">
+                            Shop
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">
+                            Plant Care
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">
+                            Blogs
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="btn_box">
+            <a href="login.html" class="btn">
+                Login
+            </a>
+        </div>
+        <hr>
+        </div>
+    </header>
+    <main>
+        <section class="offer container">
+            <div class="main_text">
+                <h3 class="title">
+                    Welcome to GreenShop
+                </h3>
+                <h1 class="title_main">
+                    Let’s Make a <br>Better <span>Planet</span>
+                </h1>
+                <p class="text">
+                    We are an online plant shop offering a wide range of cheap and trendy plants. Use <br>our plants to create an unique Urban Jungle. Order your favorite plants!
+                </p>
+                <a href="/shop" class="btn_main">
+                    SHOP NOW
+                </a>
+            </div>
+            <div class="main_img">
+                <img src="images/img-banner.png" alt="plants" class="plants_img">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
