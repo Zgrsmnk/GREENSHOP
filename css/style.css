@@ -367,6 +367,34 @@ h1 span{
 .sidebar{
     float:left;
     width:310px;
+    height: 774px;
+    background-color: #FBFBFB;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar li{
+    margin-bottom: 7px;
+    padding: 0;
+    margin: 0;
+}
+.sidebar h3{
+    margin:14px 0 7px 18px;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 700;
+}
+.item_sidebar{
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #3D3D3D;
+}
+.banner{
+    margin-top: 60px;
 }
 .navigation{
     display: inline-block;
@@ -399,13 +427,13 @@ h1 span{
 }
 .pages{
     float:right;
-    margin: 700px 0 82px 190px;
+    margin: 900px 0 82px 190px;
 
 }
-.pages ul{
+/* .pages ul{
     list-style: none;
     
-}
+} */
 .pages li{
     float: left;
     list-style:none;
@@ -422,6 +450,39 @@ h1 span{
 .pages a{
     text-decoration: none;
 }
-/* .active{} */
+.active_li{
+    color: green;
+    font-weight: 700;
+}
+.nav_list_li,
+ .drop_list {
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #3D3D3D;
+}
+.active_line{
+    color: green;
+    font-weight: 700;
+    position: relative;
+}
+.active_line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 65px;
+    height: 3px;
+    background: #46A358;
+}
+/* .drop_list{
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #3D3D3D;
+} */
+
 
 
