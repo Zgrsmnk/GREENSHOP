@@ -347,26 +347,50 @@ hr{
 h1 span{
     color: #46A358;
 }
-.content{
-    display: flex;
+.clearfix:after{
+    content:'';
+    display: table;
+    clear: both;
 }
-.products{
-    display: flex;
-    flex-direction: column;
+.sidebar{
+    float:left;
+    width:310px;
+}
+.navigation{
+    display: inline-block;
+    vertical-align: middle;
+    width: 838px;
+    align-items: center;
 }
 .navigation_filter{
     list-style: none;
     float:left;
-    width:50%;
+    width: 50%;
+    align-items: center;
 }
 .navigation_filter li{
     float: left;
-    margin-right: 15px;
+    margin-right: 37px;
 }
 .drop_list{
-    float:right;
-    
+    float: right;
+    margin: 14px 0;
 }
-
+.item{
+    float: left;
+    width: 70%;
+}
+.pages{
+    float:right;
+    width: 215px;
+    margin-top: 350px;
+}
+.pages li{
+    float: left;
+    width: 35px;
+}
+.banner{
+    padding-right: 50px;
+}
 
 
