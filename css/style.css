@@ -1,3 +1,38 @@
+@font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font: 14px/1.2 "CeraPro", sans-serif;
+    background: #FFFFFF;
+}
+
+
+
 /* styles for register */
 .login, .register{
     display: flex;
@@ -177,9 +212,7 @@ input[type="password"] {
     padding: 11px 63px 9px 64px;
 }
 /* styles for index.html */
-body{
-    background:#FFFFFF;
-}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -199,22 +232,16 @@ body{
     margin: 0 20px;
 }
 .logo_box{
-    margin-right: 150px;
+    margin-right: 140px;
     width: 150px;
 }
-.logo{
-    font-size: 25px;
-    line-height: 20px;
-    text-decoration: none;
-    color: #46A358;
-}
 .btn_box{
-    margin-left: 350px;
+    margin-left: 340px;
     padding-top: 8px;
     text-align: center;
 }
 .menu_box{
-    width: 351px;
+    width: 380px;
     padding-top: 15px;
     margin-left: 100px;
 }
@@ -234,25 +261,37 @@ hr{
     vertical-align: middle;
 }
 .main_img{
-    margin-left: 160px;
+    margin-left: 93px;
 }
 .link{
     font-size: 16px;
     line-height: 20px;
+    font-weight: 400;
     text-decoration: none;
-    color: #46A358;
+    color: inherit;
 }
 .link:hover{
     background: #28a745;
     color: #FFFFFF;
 }
-.active{
+.active_main{
     color: #3D3D3D;
-    font-weight: bold;
+    font-weight: 700;
+    position: relative;
+}
+.active_main::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 45px;
+    height: 3px;
+    background: #46A358;
 }
 .btn{
     font-size: 16px;
     line-height: 20px;
+    font-weight: 500;
     text-decoration: none;
     background-color:#46A358;
     color: #FFFFFF;
@@ -263,10 +302,17 @@ hr{
 .title{
     font-size: 14px;
     line-height: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 68px 0 0 0;
+
 }
 .title_main{
     font-size: 70px;
     line-height: 140px;
+    font-weight: 900;
+    text-transform: uppercase;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 5px;
@@ -274,12 +320,15 @@ hr{
 .text{
     font-size: 14px;
     line-height: 24px;
+    font-weight: 400;
+    color: #727272;
     margin-top:0;
     margin-bottom: 44px;
 }
 .btn_main{
     font-size: 16px;
     line-height: 20px;
+    font-weight: 700;
     background-color: #46A358;
     color: #FFFFFF;
     padding: 10px 27px;
@@ -298,7 +347,26 @@ hr{
 h1 span{
     color: #46A358;
 }
-
+.content{
+    display: flex;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+}
+.navigation_filter{
+    list-style: none;
+    float:left;
+    width:50%;
+}
+.navigation_filter li{
+    float: left;
+    margin-right: 15px;
+}
+.drop_list{
+    float:right;
+    
+}
 
 
 
