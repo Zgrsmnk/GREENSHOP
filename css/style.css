@@ -1,5 +1,12 @@
 @font-face {
     font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CeraPro';
     src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
@@ -347,6 +354,11 @@ hr{
 h1 span{
     color: #46A358;
 }
+
+/* styles for float */
+.content{
+    margin-top: 150px;
+}
 .clearfix:after{
     content:'';
     display: table;
@@ -361,12 +373,14 @@ h1 span{
     vertical-align: middle;
     width: 838px;
     align-items: center;
+    margin-left: 50px;
 }
 .navigation_filter{
     list-style: none;
     float:left;
     width: 50%;
     align-items: center;
+    padding: 0;
 }
 .navigation_filter li{
     float: left;
@@ -378,19 +392,36 @@ h1 span{
 }
 .item{
     float: left;
-    width: 70%;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 31px;
+    background-color: #FBFBFB;
 }
 .pages{
     float:right;
-    width: 215px;
-    margin-top: 350px;
+    margin: 700px 0 82px 190px;
+
+}
+.pages ul{
+    list-style: none;
+    
 }
 .pages li{
     float: left;
-    width: 35px;
+    list-style:none;
+    font-size: 10px;
+    line-height: 1.6;
+    font-weight: 300;
+    padding: 10px 15px;
+    align-items: center;
+    border: 2px solid #E5E5E5;
+    border-radius: 10px;
+    margin: 5px;
+    text-decoration: none;
 }
-.banner{
-    padding-right: 50px;
+.pages a{
+    text-decoration: none;
 }
+/* .active{} */
 
 
