@@ -273,7 +273,6 @@ hr{
 .link{
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400;
     text-decoration: none;
     color: inherit;
 }
@@ -327,7 +326,6 @@ hr{
 .text{
     font-size: 14px;
     line-height: 24px;
-    font-weight: 400;
     color: #727272;
     margin-top:0;
     margin-bottom: 44px;
@@ -367,16 +365,10 @@ h1 span{
 .sidebar{
     float:left;
     width:310px;
-    height: 774px;
     background-color: #FBFBFB;
 }
 .sidebar ul{
     list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.sidebar li{
-    margin-bottom: 7px;
     padding: 0;
     margin: 0;
 }
@@ -389,12 +381,15 @@ h1 span{
 .item_sidebar{
     font-size: 15px;
     line-height: 40px;
-    font-weight: 400;
     text-decoration: none;
     color: #3D3D3D;
 }
+.navigation_item{
+    padding-left: 30px;
+}
 .banner{
-    margin-top: 60px;
+    display: block;
+    width: 100%;
 }
 .navigation{
     display: inline-block;
@@ -419,37 +414,33 @@ h1 span{
     margin: 14px 0;
 }
 .item{
-    float: left;
-    width: 250px;
+    display: inline-block;
+    width: 838px;
     margin-left: 50px;
-    margin-top: 31px;
-    background-color: #FBFBFB;
 }
-.item:hover{
-    background:#E7E7E7;
-}
-.pages{
-    float:right;
-    margin: 900px 0 82px 190px;
+.pages_nav{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
 }
 .pages li{
-    float: left;
-    list-style:none;
-    font-size: 10px;
-    line-height: 1.6;
-    font-weight: 300;
-    padding: 10px 15px;
-    align-items: center;
-    border: 2px solid #E5E5E5;
-    border-radius: 10px;
-    margin: 5px;
+    list-style: none;
 }
-.pages li:hover{
+.pages a:not(.active):hover{
     background: #3E8E4D;
     color: #FFFFFF;
 }
 .pages a{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 300;
+    padding: 10px 15px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
     text-decoration: none;
+}
+.pages a:not(.active) {
     color: black;
 }
 .active{
@@ -465,7 +456,6 @@ h1 span{
 .nav_list_prod {
     font-size: 15px;
     line-height: 16px;
-    font-weight: 400;
     text-decoration: none;
     color: #3D3D3D;
 }
@@ -486,7 +476,6 @@ h1 span{
 .item_text{
     font-size: 16px;
     line-height: 16px;
-    font-weight: 400;
     margin: 0 0 6px 0;
 }
 .price_products{
@@ -498,7 +487,7 @@ h1 span{
 .price_products:before{
     content:"$";
 }
-.item_sidebar:hover{
+.item_sidebar:not(.active_li):hover{
     background: #28a745;
     color: #FFFFFF;
 }
@@ -506,14 +495,13 @@ h1 span{
     background: #28a745;
     color: #FFFFFF;
 }
-.nav_list_prod:hover {
+.nav_list_prod:not(.active_line):hover {
     background: #28a745;
     color: #FFFFFF;
 }
 #short_by{
     font-size: 15px;
     line-height: 16px;
-    font-weight: 400;
 }
 
 
