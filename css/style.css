@@ -425,15 +425,13 @@ h1 span{
     margin-top: 31px;
     background-color: #FBFBFB;
 }
+.item:hover{
+    background:#E7E7E7;
+}
 .pages{
     float:right;
     margin: 900px 0 82px 190px;
-
 }
-/* .pages ul{
-    list-style: none;
-    
-} */
 .pages li{
     float: left;
     list-style:none;
@@ -445,17 +443,26 @@ h1 span{
     border: 2px solid #E5E5E5;
     border-radius: 10px;
     margin: 5px;
-    text-decoration: none;
+}
+.pages li:hover{
+    background: #3E8E4D;
+    color: #FFFFFF;
 }
 .pages a{
     text-decoration: none;
+    color: black;
+}
+.active{
+    background: #46A358;
+    color: #FFFFFF;
 }
 .active_li{
     color: green;
     font-weight: 700;
 }
 .nav_list_li,
- .drop_list {
+.drop_list,
+.nav_list_prod {
     font-size: 15px;
     line-height: 16px;
     font-weight: 400;
@@ -467,7 +474,7 @@ h1 span{
     font-weight: 700;
     position: relative;
 }
-.active_line::after {
+.active_line::after{
     content: "";
     position: absolute;
     left: 0;
@@ -476,13 +483,38 @@ h1 span{
     height: 3px;
     background: #46A358;
 }
-/* .drop_list{
+.item_text{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0 0 6px 0;
+}
+.price_products{
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #46A358;
+}
+.price_products:before{
+    content:"$";
+}
+.item_sidebar:hover{
+    background: #28a745;
+    color: #FFFFFF;
+}
+.nav_list_li:hover{
+    background: #28a745;
+    color: #FFFFFF;
+}
+.nav_list_prod:hover {
+    background: #28a745;
+    color: #FFFFFF;
+}
+#short_by{
     font-size: 15px;
     line-height: 16px;
     font-weight: 400;
-    text-decoration: none;
-    color: #3D3D3D;
-} */
+}
 
 
 
