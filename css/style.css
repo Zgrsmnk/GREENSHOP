@@ -243,10 +243,12 @@ input[type="password"] {
     text-decoration: none;
     color: inherit;
 }
-.link:hover,
-.post_buttons:hover {
+.link:hover:hover {
     background: #28a745;
     color: #FFFFFF;
+}
+.post_buttons:hover {
+    color: #28a745;
 }
 .active_main {
     color: #3D3D3D;
@@ -329,7 +331,6 @@ hr{
 .content{
     display: flex;
     justify-content: space-between;
-    align-items: stretch ;
 }
 .sidebar{
     display: flex;
@@ -375,8 +376,7 @@ hr{
     height: 3px;
     background: #46A358;
 }
-.nav_list_li:hover,
-.active_arrow:hover {
+.nav_list_li:hover {
     background: #28a745;
     color: #FFFFFF;
 }
@@ -415,7 +415,6 @@ hr{
 }
 .items{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap:70px 33px;
     margin-top: 31px;
@@ -448,7 +447,7 @@ hr{
     justify-content: flex-end;
     margin-top: 90px;
 }
-.pages li {
+.pages li{
     list-style: none;
 }
 .pages a:not(.active):hover {
@@ -456,7 +455,7 @@ hr{
     color: #FFFFFF;
 }
 .pages a {
-    display: inline-block;
+    display: flex;
     font-size: 18px;
     line-height: 16px;
     font-weight: 300;
@@ -483,17 +482,25 @@ hr{
     background: #FBFBFB;
     width: 586px;
 }
+.reference_item_one .cactus_summer {
+    margin-top: -60px;
+}
 .reference_item_two{
     display: flex;
     align-items: center;
     background: #FBFBFB;
     width: 586px;
 }
+.reference_item_two .trends_styling{
+    margin-top: -40px;
+}
 .reference_text_one{
     margin-right: 30px;
+    text-align: right;
 }
 .reference_text_two{
     margin-right: 35px;
+    text-align: right;
 }
 .ref_title{
     font-size: 18px;
@@ -523,21 +530,22 @@ hr{
     border-radius: 10px;
     text-decoration: none;
 }
-.posts{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin: 138px 0 0 0;
-    padding: 0;  
-}
 .posts_title{
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 138px 0 15px 0;
+    font-size: 30px;
+    line-height: 16px;
+    font-weight: 700;
+
 }
 .posts_text{
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
 }
 .post_cards{
     display: flex;
@@ -548,24 +556,27 @@ hr{
     background: #FBFBFB;
     width: 268px;
 }
+.post_container{
+    margin: 0 0 12px 13px;
+}
 .post_active{
     color:#46A358;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    margin: 9px 0 0 13px;
+    margin: 9px 0 0 0;
 }
 .post_title_text{
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
-    margin: 4px 0 0 13px;
+    margin: 4px 0 0 0px;
 }
 .post_text{
     font-size: 14px;
     line-height: 22px;
     color: #727272;
-    margin: 4px 0 0 13px;
+    margin: 4px 0 0 0px;
 }
 .post_buttons{
     display: inline-flex;
@@ -574,12 +585,13 @@ hr{
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    margin: 4px 0 12px 13px;
+    margin: 4px 0 0 0;
     color: #3D3D3D;
     text-decoration: none;
 }
-.active_arrow{
-    color: #46A358;
+.post_buttons::after {
+    content: "\2192";
+    margin-left: 3px;
 }
 
 
