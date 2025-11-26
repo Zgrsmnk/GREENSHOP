@@ -463,7 +463,7 @@ hr{
     line-height: 16px;
     margin: 12px 0 6px 0;
 }
-.price_products {
+.price_products{
     font-size: 18px;
     line-height: 16px;
     font-weight: 700;
@@ -471,6 +471,12 @@ hr{
 }
 .price_products:before {
     content: "$";
+}
+.price_products del{
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 16px;
+    color: #A5A5A5;
 }
 .line{
     position: absolute;
