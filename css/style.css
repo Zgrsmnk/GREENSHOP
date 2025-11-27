@@ -423,40 +423,45 @@ hr{
     position: relative;
     width: 258px;
 }
-.actions{
-    align-items: center;
+.item_picture .actions{
+    justify-content: center;
     gap: 10px;
     position: absolute;
     z-index: 5;
-    left:67px;
-    bottom:52px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: none;
 }
-.item:hover .actions{
+.item_picture:hover .actions {
     display: flex;
 }
 .actions a{
     text-decoration: none;
     padding: 7px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
 }
 .item_picture{
+    position: relative;
     height: 300px;
     background: #FBFBFB;
 }
 .item_one,
 .item_eight{
-    padding: 31px 4px 26px 4px;
+    padding: 29px 4px 26px 4px;
 }
 .item_two,
 .item_three,
 .item_nine{
-    padding: 24px 4px 26px 4px;
+    padding: 22px 4px 26px 4px;
 }
 .item_four,
 .item_five,
 .item_six,
 .item_seven{
-    padding: 21px 4px 26px 4px;
+    padding: 13px 4px 26px 4px;
 }
 .item_text {
     font-size: 16px;
