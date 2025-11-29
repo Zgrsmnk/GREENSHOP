@@ -289,8 +289,8 @@ input[type="password"] {
     display: inline-block;
     width: 8px;
     height: 8px;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
+    border-top: 2px solid #3D3D3D;
+    border-right: 2px solid #3D3D3D;
     transform: rotate(45deg);
     position: absolute;
     right: 13px;
