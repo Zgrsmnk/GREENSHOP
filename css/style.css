@@ -265,7 +265,7 @@ input[type="password"] {
 }
 .menu li{
     background: #F5F5F5;
-    position: relative;
+    /* position: relative; */
 }
 .menu a{
     display: block;
@@ -294,7 +294,13 @@ input[type="password"] {
     transform: rotate(45deg);
     position: absolute;
     right: 13px;
-    top: 14px;
+    top: 155px;
+    transition: transform 0.2s linear;
+}
+.menu li:hover::after{
+    transform: rotate(-140deg);
+    border-top: 2px solid white;
+    border-right: 2px solid white;
 }
 .second_menu{
     position: absolute;
