@@ -937,6 +937,10 @@ hr{
 }
 .media_title{
     margin: 0 0 13px 0;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #3D3D3D;
 }
 .items_text li:hover a{
     background: #28a745;
