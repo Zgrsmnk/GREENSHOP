@@ -840,6 +840,7 @@ hr{
     display: flex;
     align-items: center;
     gap: 9px;
+    flex-grow: 1;
 }
 .footer_text{
     font-size: 14px;
@@ -855,17 +856,18 @@ hr{
 }
 .footer_items{
     display: flex;
-    gap: 146px;
     margin-left: 25px;
 }
 .footer_nav {
     display: flex;
     gap: 70px;
+    flex-grow: 1;
 }
 .item_nav{
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 33.33%;
 }
 .item_nav ul{
     list-style: none;
@@ -889,6 +891,7 @@ hr{
 }
 .media{
     margin-top: 33px;
+    width: 33.33%;
 }
 .media_title{
     margin: 0 0 13px 0;
