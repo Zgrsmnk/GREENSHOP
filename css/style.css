@@ -1047,11 +1047,9 @@ hr{
     height: 3px;
     background: #46A358;
     transition: width 0.3s linear;
-    /* display: none; */
 }
 .items_text a:hover::after{
     width: 100%;
-    /* display: block; */
 }
 .phone_number:hover{
     color: white;
@@ -1069,6 +1067,7 @@ hr{
     font-size: 14px;
     line-height: 30px;
 }
+
 
 
 
