@@ -33,6 +33,86 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-style: normal;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_right:before {
+    content: "\e900";
+}
+
+.icon-logout:before {
+    content: "\e901";
+}
+
+.icon-basket:before {
+    content: "\e902";
+}
+
+.icon-heart:before {
+    content: "\e903";
+}
+
+.icon-glass:before {
+    content: "\e904";
+}
+
+.icon-phone:before {
+    content: "\e942";
+}
+
+.icon-envelop:before {
+    content: "\e945";
+}
+
+.icon-location:before {
+    content: "\e948";
+}
+
+.icon-arrow-right2:before {
+    content: "\ea3c";
+}
+
+.icon-facebook:before {
+    content: "\ea90";
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+}
+
+.icon-youtube:before {
+    content: "\ea9d";
+}
+
+.icon-linkedin:before {
+    content: "\eaca";
+}
 body {
     font: 14px/1.2 "CeraPro", sans-serif;
     background: #FFFFFF;
@@ -243,14 +323,21 @@ input[type="password"] {
     text-decoration: none;
     color: inherit;
 }
-.list:hover::after {
+.list::after,
+.active_main::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
     bottom: -20px;
-    width: 100%;
     height: 3px;
     background: #46A358;
+    transition: width 0.3s linear;
+}
+.list:hover::after,
+.active_main:hover::after {
+    width: 100%;
 }
 .menu{
     list-style: none;
@@ -284,22 +371,19 @@ input[type="password"] {
     visibility: visible;
 }
 .menu li:has(.second_menu)::after{
-    content: "";
+    content: "\e900";
+    font-family: 'icomoon' !important;
     display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-top: 2px solid #3D3D3D;
-    border-right: 2px solid #3D3D3D;
-    transform: rotate(45deg);
+    font-size: 20px;
+    transform: rotate(0deg);
     position: absolute;
     right: 13px;
-    top: 155px;
+    top: 148px;
     transition: transform 0.2s linear;
 }
 .menu li:hover::after{
-    transform: rotate(-140deg);
-    border-top: 2px solid white;
-    border-right: 2px solid white;
+    transform: rotate(-180deg);
+    color: white;
 }
 .second_menu{
     position: absolute;
@@ -330,15 +414,6 @@ input[type="password"] {
     font-weight: 700;
     position: relative;
 }
-.active_main::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -20px;
-    width: 45px;
-    height: 3px;
-    background: #46A358;
-}
 .btn {
     font-size: 16px;
     line-height: 20px;
@@ -349,6 +424,7 @@ input[type="password"] {
     padding: 8px 17px;
     border: 2px solid #46A358;
     border-radius: 10px;
+    align-items: center;
 }
 hr{
     width: 1200px;
@@ -494,6 +570,25 @@ hr{
     gap:70px 33px;
     margin-top: 31px;
 }
+.icon-basket,
+.icon-heart,
+.icon-glass{
+    font-size: 20px;
+    color: #3D3D3D;
+}
+.icon-basket:hover,
+.icon-heart:hover,
+.icon-glass:hover {
+    color: #46A358;
+}
+.actions i{
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: 0;
+}
+.actions i::before{
+    font-size: 20px;
+}
 .item{
     position: relative;
     width: 258px;
@@ -561,13 +656,15 @@ hr{
 .line{
     position: absolute;
     border-top: 2px solid #46A358;
-    width: 258px;
+    width: 0;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
-    display: none;
+    transition: width 0.3s linear;
 }
 .item:hover .line{
-    display: block;
+    width: 258px;
 }
 .sale_item{
     position: absolute;
@@ -658,7 +755,7 @@ hr{
 .button_ref{
     display: inline-flex;
     align-items: center;
-    gap: 2px;
+    gap: 5px;
     justify-content: center;
     font-size: 14px;
     line-height: 20px;
@@ -728,10 +825,6 @@ hr{
     margin: 4px 0 0 0;
     color: #3D3D3D;
     text-decoration: none;
-}
-.post_buttons::after {
-    content: "\2192";
-    margin-left: 3px;
 }
 .background{
     background-color: #FBFBFB;
@@ -842,6 +935,12 @@ hr{
     gap: 9px;
     flex-grow: 1;
 }
+.icon-location,
+.icon-envelop,
+.icon-phone{
+    font-size: 20px;
+    color: #46A358;
+}
 .footer_text{
     font-size: 14px;
     line-height: 22px;
@@ -889,6 +988,33 @@ hr{
     color: #3D3D3D;
     text-decoration: none;
 }
+.icons_item{
+    padding: 0 0 20px 0;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+.icons li{
+    list-style: none;
+}
+.icons a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px;
+    align-items: center;
+    color: #46A358;
+    border: 1px solid rgba(70, 163, 88, 0.2);
+    border-radius: 4px;
+    background: white;
+    opacity: 0.6;
+}
+.icons a:hover{
+    color: #46A358;
+    opacity: 1;
+    border: 1px solid rgba(70, 163, 88, 1);
+}
 .media{
     margin-top: 33px;
     width: 33.33%;
@@ -900,21 +1026,32 @@ hr{
     font-weight: 700;
     color: #3D3D3D;
 }
+.icons_title {
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #3D3D3D;
+}
 .items_text a{
     position: relative;
 }
 .items_text a::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -5px;
-    width: 100%;
+    width: 0;
     height: 3px;
     background: #46A358;
-    display: none;
+    transition: width 0.3s linear;
+    /* display: none; */
 }
 .items_text a:hover::after{
-    display: block;
+    width: 100%;
+    /* display: block; */
 }
 .phone_number:hover{
     color: white;
