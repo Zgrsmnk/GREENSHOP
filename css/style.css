@@ -1551,6 +1551,12 @@ input[type="password"] {
         padding: 0;
     }
 }
+@media screen and (max-width:447px) {
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 @media screen and (max-width:435px) {
     .post_card {
         max-width: 70%;
@@ -1599,7 +1605,7 @@ input[type="password"] {
         padding: 0;
     }
     .active_line::after{
-        width: 51px;
+        width: 65px;
     }
     .item{
         width: 70%;
@@ -1691,6 +1697,7 @@ input[type="password"] {
     }
     .form_text {
         max-width: 250px;
+        margin-left: 57px;
     }
 }
 
