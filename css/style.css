@@ -586,7 +586,6 @@ input[type="password"] {
 .items{
     display: flex;
     flex-wrap: wrap;
-    /* gap:70px 33px; */
     margin:0 -15px;
 }
 .icon-basket,
@@ -635,7 +634,6 @@ input[type="password"] {
 }
 .item_picture{
     position: relative;
-    /* height: 300px; */
     background: #FBFBFB;
 }
 .item_picture img{
