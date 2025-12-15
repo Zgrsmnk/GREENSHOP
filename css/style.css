@@ -1169,6 +1169,17 @@ input[type="password"] {
     .feedback_form {
         margin: 40px 0 0 0;
     }
+    .information {
+        gap:40px;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0;
+    }
+    .item_information{
+        max-width: 50%;
+        justify-content: center;
+    }
 }
 @media screen and (max-width:1024px) {
     .offer {
@@ -1249,9 +1260,9 @@ input[type="password"] {
     .feedback_form {
         margin: 40px 0 0 0;
     }
-    .footer_item {
+    /* .footer_item {
         width: 33.33%;
-    }
+    } */
 }
 @media screen and (max-width:768px){
     .menu{
@@ -1318,7 +1329,7 @@ input[type="password"] {
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: 0.4;
-        max-width: 300px;
+        max-width: 380px;
     }
     .main_text {
         margin: 0;
@@ -1415,6 +1426,17 @@ input[type="password"] {
     }
     .item_text {
         font-size: 13px;
+    }
+}
+@media screen and (max-width:750px) {
+    .information {
+        gap:30px;
+    }
+}
+@media screen and (max-width:697px) {
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 @media screen and (max-width:671px) {
@@ -1550,6 +1572,12 @@ input[type="password"] {
         max-width: 219px;
         padding: 0;
     }
+    .footer_text {
+        font-size: 13px;
+    }
+    .item_information a {
+        font-size: 13px;
+    }
 }
 @media screen and (max-width:447px) {
     .navigation {
@@ -1652,6 +1680,11 @@ input[type="password"] {
     }
 
 }
+@media screen and (max-width:409px) {
+    .item_information {
+        width: 80%;
+    }
+}
 @media screen and (max-width:376px) {
     .menu_box {
         width: 140px;
@@ -1698,6 +1731,9 @@ input[type="password"] {
     .form_text {
         max-width: 250px;
         margin-left: 57px;
+    }
+    .information {
+        gap: 32px;
     }
 }
 
