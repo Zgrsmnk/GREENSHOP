@@ -308,7 +308,7 @@ input[type="password"] {
 /* styles for index.html */
 
 .wrapper{
-    max-width: 375px;
+    min-width: 375px;
 }
 .container{
     max-width: 1200px;
