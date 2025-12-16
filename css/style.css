@@ -315,6 +315,10 @@ input[type="password"] {
     margin: 0 auto;
     padding: 0 15px;
 }
+.container_footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .header_item{
     display: flex;
     justify-content: space-between;
@@ -599,12 +603,16 @@ input[type="password"] {
 .icon-glass:hover {
     color: #46A358;
 }
-.actions i{
-    font-size: 0;
-    line-height: 0;
-    letter-spacing: 0;
+.icons_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.actions i::before{
+.icons_main i{
+    position: relative;
+    font-size: 0;
+}
+.icons_main i::before{
     font-size: 20px;
 }
 .item{
@@ -1156,7 +1164,7 @@ input[type="password"] {
         margin: 40px 0 0 0;
     }
     .information {
-        gap:40px;
+        gap:140px;
         justify-content: center;
         flex-wrap: wrap;
         height: auto;
@@ -1164,6 +1172,20 @@ input[type="password"] {
     }
     .item_information{
         justify-content: center;
+    }
+    .reference_text_one {
+        padding-bottom: 15px;
+    }
+    .reference_text_two {
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width:1101px) {
+    .information {
+        gap:105px;
+    }
+    .pages_nav{
+        margin-top: 30px;
     }
 }
 @media screen and (max-width:1024px) {
@@ -1233,12 +1255,23 @@ input[type="password"] {
     .post_buttons {
         font-size: 13px;
     }
-    .content_section {
-        flex-wrap: wrap;
-        justify-content: center;
+    .information {
+        gap: 85px;
     }
-    .feedback_form {
-        margin: 40px 0 0 0;
+}
+@media screen and (max-width:996px) {
+    .information {
+        gap: 75px;
+    }
+}
+@media screen and (max-width:907px) {
+    .information {
+        gap: 47px;
+    }
+}
+@media screen and (max-width:823px) {
+    .information {
+        gap: 20px;
     }
 }
 @media screen and (max-width:768px){
@@ -1318,12 +1351,13 @@ input[type="password"] {
         width: 200px;
     }
     .content {
-        margin-top: 200px;
+        margin-top: 115px;
     }
     .navigation_filter {
         gap:23px;
     }
     .item {
+        padding: 0 15px 25px 15px;
         width: 50%;
     }
     .pages a {
@@ -1404,13 +1438,18 @@ input[type="password"] {
     .item_text {
         font-size: 13px;
     }
-    .footer_items{
-        margin: 0;
+    .footer_nav {
+        margin-right: 20px;
+        gap:20px;
     }
 }
 @media screen and (max-width:750px) {
     .information {
-        gap:30px;
+        column-gap:30px;
+        row-gap: 0;
+    }
+    .information {
+        padding-bottom: 10px;
     }
 }
 @media screen and (max-width:741px) {
@@ -1445,7 +1484,7 @@ input[type="password"] {
     .navigation {
         flex-wrap: wrap;
         justify-content: center;
-        gap:15px;
+        column-gap:100px;
     }
 }
 @media screen and (max-width:671px) {
@@ -1465,12 +1504,26 @@ input[type="password"] {
             width: 180px;
         }
         .footer_nav {
+            margin: 0;
             gap:10px;
         }
 }
 @media screen and (max-width:587px) {
     .content {
         flex-direction: column-reverse;
+    }
+    .sidebar ul{
+        display: flex;
+        column-gap: 30px;
+        margin: 0 0 20px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .navigation{
+        margin: 0;
+    }
+    .navigation_item{
+        padding-left: 0;
     }
     .reference_items {
         gap:10px;
@@ -1481,12 +1534,23 @@ input[type="password"] {
     .products {
         margin-left: 0;
     }
-    
     .sidebar {
         align-items: center;
         width: 100%;
     }
-
+    .footer_items {
+        margin: 0;
+    }
+    .footer_nav {
+        gap:0;
+    }
+}
+@media screen and (max-width:547px) {
+    .navigation {
+        column-gap: 60px;
+        row-gap: 0;
+        padding-bottom: 30px;
+    }
 }
 @media screen and (max-width:540px) {
     .title_main {
@@ -1516,28 +1580,16 @@ input[type="password"] {
     .content {
         flex-direction: column-reverse;
     }
-    .products {
-        margin: 0;
-    }
-    .sidebar{
-        align-items: center;
-        width: 100%;
-    }
     .sidebar h3 {
-        margin: 14px 0 7px 0;
+        margin-bottom: 18px;
     }
     .navigation_item{
-        padding: 0;
-    }
-    .sidebar ul {
-        padding-bottom: 40px;
+        padding-left: 0;
     }
     .reference_item_one .cactus_summer {
-        margin: 0;
         max-width: 200px;
     }
     .reference_item_two .trends_styling {
-        margin: 0;
         max-width: 200px;
     }
     .ref_text {
@@ -1610,12 +1662,9 @@ input[type="password"] {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .item_nav {
-        width:197px;
-    }
     .footer_nav {
-        gap:0;
-        flex-wrap: wrap;
+        margin: 0;
+        gap:5px;
     }
 }
 @media screen and (max-width:435px) {
@@ -1706,6 +1755,10 @@ input[type="password"] {
     .posts_title{
         font-weight: 22px;
     }
+    .sidebar ul {
+        flex-wrap: nowrap;
+        display: inline-block;
+    }
 
 }
 @media screen and (max-width:376px) {
@@ -1730,6 +1783,7 @@ input[type="password"] {
     }
     .navigation {
         gap: 15px;
+        padding-bottom: 30px;
     }
     .post_title_text {
         max-width:250px ;
@@ -1756,7 +1810,7 @@ input[type="password"] {
         margin-left: 57px;
     }
     .information {
-        gap: 32px;
+        gap: 20px;
     }
 }
 
