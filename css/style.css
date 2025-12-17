@@ -707,7 +707,10 @@ input[type="password"] {
     color: #FFFFFF;
 }
 .pages a {
+    width: 40px;
+    height: 40px;
     display: flex;
+    justify-content: center;
     font-size: 18px;
     line-height: 16px;
     font-weight: 300;
@@ -1181,10 +1184,15 @@ input[type="password"] {
         padding-bottom: 15px;
     }
 }
-@media screen and (max-width:1101px) {
+@media screen and (max-width:1145px) {
     .information {
-        gap:105px;
+        gap: 105px;
     }
+}
+@media screen and (max-width:1101px) {
+    /* .information {
+        gap:105px;
+    } */
     .pages_nav{
         margin-top: 30px;
     }
@@ -1275,6 +1283,13 @@ input[type="password"] {
         gap: 20px;
     }
 }
+@media screen and (max-width:777px){
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 100px;
+    }
+}
 @media screen and (max-width:768px){
     .menu{
         left:-188px;
@@ -1354,7 +1369,7 @@ input[type="password"] {
         width: 200px;
     }
     .content {
-        margin-top: 115px;
+        margin-top: 150px;
     }
     .navigation_filter {
         gap:23px;
@@ -1420,21 +1435,17 @@ input[type="password"] {
         font-size: 17px;
         line-height: 20px;
     }
-    
     .post_active {
         font-size: 13px;
     }
-    
     .posts_text {
         font-size: 14px;
     }
-    
     .post_text {
         font-size: 13px;
         line-height: 18px;
         max-width: 207px;
     }
-    
     .post_buttons {
         font-size: 13px;
     }
@@ -1450,8 +1461,6 @@ input[type="password"] {
     .information {
         column-gap:30px;
         row-gap: 0;
-    }
-    .information {
         padding-bottom: 10px;
     }
 }
@@ -1468,6 +1477,7 @@ input[type="password"] {
     .item_nav {
         width: 200px;
         align-items: center;
+        text-align: center;
     }
     .icons_title {
         text-align: center;
@@ -1483,13 +1493,13 @@ input[type="password"] {
         height: 35px;
     }
 }
-@media screen and (max-width:697px) {
+/* @media screen and (max-width:697px) {
     .navigation {
         flex-wrap: wrap;
         justify-content: center;
         column-gap:100px;
     }
-}
+} */
 @media screen and (max-width:671px) {
         .post_cards {
             gap:30px;
@@ -1762,7 +1772,6 @@ input[type="password"] {
         flex-wrap: nowrap;
         display: inline-block;
     }
-
 }
 @media screen and (max-width:376px) {
     .menu_box {
@@ -1813,7 +1822,8 @@ input[type="password"] {
         margin-left: 57px;
     }
     .information {
-        gap: 20px;
+        padding: 0 10px;
+        gap: 7px;
     }
 }
 
