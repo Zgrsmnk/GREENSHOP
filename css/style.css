@@ -1190,9 +1190,6 @@ input[type="password"] {
     }
 }
 @media screen and (max-width:1101px) {
-    /* .information {
-        gap:105px;
-    } */
     .pages_nav{
         margin-top: 30px;
     }
@@ -1355,7 +1352,6 @@ input[type="password"] {
         top: 20px;
         right: 0;
         left: auto;
-        /* transform: translate(-50%, -50%); */
         opacity: 0.4;
         max-width: 380px;
     }
@@ -1493,13 +1489,6 @@ input[type="password"] {
         height: 35px;
     }
 }
-/* @media screen and (max-width:697px) {
-    .navigation {
-        flex-wrap: wrap;
-        justify-content: center;
-        column-gap:100px;
-    }
-} */
 @media screen and (max-width:671px) {
         .post_cards {
             gap:30px;
