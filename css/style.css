@@ -451,6 +451,7 @@ input[type="password"] {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 26px;
+    position: relative;
 }
 .title {
     font-size: 14px;
@@ -1333,11 +1334,13 @@ input[type="password"] {
         font-size: 14px;
     }
     .main_img{
+        position: absolute;
         z-index: -1;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 20px;
+        right: 0;
+        left: auto;
+        /* transform: translate(-50%, -50%); */
         opacity: 0.4;
         max-width: 380px;
     }
@@ -1677,7 +1680,7 @@ input[type="password"] {
         max-width: 280px;
     }
     .posts_title {
-        font-weight: 22px;
+        font-size:22px;
     }
     .form_title {
         font-size: 17px;
@@ -1753,7 +1756,7 @@ input[type="password"] {
         max-width: 70%;
     }
     .posts_title{
-        font-weight: 22px;
+        font-size:22px;
     }
     .sidebar ul {
         flex-wrap: nowrap;
